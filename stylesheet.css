@@ -1,0 +1,21 @@
+.Buttons {
+    display: flex; /* or inline-flex */
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+.item{
+    flex: 1 1 25%;
+}
+
+.major-container{
+    display: flex;
+    flex-direction: column
+
+}
+
+#resultPanel{
+    border:1px solid black;
+    text-align: right;
+
+}
