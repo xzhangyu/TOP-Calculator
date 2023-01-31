@@ -5,68 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-    <!-- 
-        1.shift command L - select all occurances 
-        2.shift option F - code formatting
-        3.option Z - change line 
-    -->
+    <main class="main">
+        <div class="calculator">
+            <div class="screen">
+                <div class="screen-last" id="lastOperationScreen"></div>
+                <div class="screen-current" id="currentOperationScreen">0</div>
+            </div>
+            <div class="buttons-grid">
+                <button class="btn btn-red span-2" id="clearBtn" onclick="this.blur();">
+                    CLEAR
+                </button>
+                <button class="btn btn-blue span-2" id="deleteBtn" onclick="this.blur();">
+                    DELETE
+                </button>
+                <button class="btn" onclick="this.blur();" data-number>7</button>
+                <button class="btn" onclick="this.blur();" data-number>8</button>
+                <button class="btn" onclick="this.blur();" data-number>9</button>
+                <button class="btn" onclick="this.blur();" data-operator>÷</button>
 
-    <!-- Basic Structure - HTML and CSS
-        1.要有一些button，0-9，+-*/，删除，=，clear（用来清除所有储存的数据，这些button用html来做，并且这些buttons需要排序，因此要用到flex-box，先把button创建
-        2.用flex-box来做一个界面，一个4x4的格式
-        3.创造一个显示器，在Buttons的上面，黑色border，数字靠右
-     -->
+                <button class="btn" onclick="this.blur();" data-number>4</button>
+                <button class="btn" onclick="this.blur();" data-number>5</button>
+                <button class="btn" onclick="this.blur();" data-number>6</button>
+                <button class="btn" onclick="this.blur();" data-operator>×</button>
 
-    <!-- Javascript
-        1.数字：用户click几，就把对应的数字显示在ResultPanel里
-            i.先给所有的numberButtons写一个标签
-    -->
+                <button class="btn" onclick="this.blur();" data-number>1</button>
+                <button class="btn" onclick="this.blur();" data-number>2</button>
+                <button class="btn" onclick="this.blur();" data-number>3</button>
+                <button class="btn" onclick="this.blur();" data-operator>−</button>
 
-    <div class="major-container">
-        <div id="resultPanel">eds</div>
-        <div class="Buttons">
-            <button class="item" data-number>1</button>
-            <button class="item" data-number>2</button>
-            <button class="item" data-number>3</button>
-            <button class="item" data-number>+</button>
-            <button class="item" data-number>4</button>
-            <button class="item" data-number>5</button>
-            <button class="item" data-number>6</button>
-            <button class="item">-</button>
-            <button class="item" data-number>7</button>
-            <button class="item" data-number>8</button>
-
-            <button class="item" data-number>9</button>
-            <button class="item">*</button>
-            <button class="item" data-number>0</button>
-            <button class="item">=</button>
-            <button class="item">clear</button>
-            <button class="item">/</button>
+                <button class="btn" onclick="this.blur();" id="pointBtn">.</button>
+                <button class="btn" onclick="this.blur();" data-number>0</button>
+                <button class="btn" onclick="this.blur();" id="equalsBtn">=</button>
+                <button class="btn" onclick="this.blur();" data-operator>+</button>
+            </div>
         </div>
-    </div>
-
-    <script>
-        const numberButtons = document.querySelectorAll('[data-number]')
-        numberButtons.forEach((button) =>
-            button.addEventListener('click', () => appendNumber(button.textContent))
-        )
-        function appendNumber(number) {
-            if (currentOperationScreen.textContent === '0' || shouldResetScreen)
-                resetScreen()
-            currentOperationScreen.textContent += number
-        }
-
-
-        function outputToPanel() {
-            document.getElementById("resultPanel").innerHTML = this.innerText;
-        }
-    </script>
-
+    </main>
+    <footer class="footer">
+        <p>
+            Copyright ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            michalosman
+        </p>
+        <a href="https://github.com/michalosman" target="_blank">
+            <i class="fab fa-github"></i></a>
+    </footer>
 </body>
 
 </html>

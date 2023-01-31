@@ -1,0 +1,109 @@
+
+
+
+
+
+Shortcut Learnt:
+1.shift command L - select all occurrences
+2.shift option F - code formatting
+3.option Z - change line 
+4.shift command P - Command Palette
+
+
+
+
+New HTML Tag Learnt:
+<main>Tag
+
+<i>Tag
+    for accessibility
+    The <i> tag defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
+
+<footer>Tag
+
+
+
+
+
+New CSS Learnt:
+* selector
+    Asterisk ( * ) is a wildcard and means all elements
+
+CSS Box Sizing
+The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
+box-sizing: border-box;
+https://www.w3schools.com/css/css3_box-sizing.asp
+
+
+position: relative;
+By default, the position property for all HTML elements in CSS is set to static.
+[position: relative] position an element based on its current position without changing layout.
+used with top, left, right, bottom.
+
+
+min-height: 100%;
+Good for footers??
+
+
+A footer support code block:
+html {
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+}
+
+line-height
+https://developer.mozilla.org/en-US/docs/Web/CSS/line-height
+It's commonly used to set the distance between lines of text
+
+
+
+::before
+It is often used to add cosmetic content to an element with the content property. It is inline by default.
+https://developer.mozilla.org/en-US/docs/Web/CSS/::before
+
+:root
+https://developer.mozilla.org/en-US/docs/Web/CSS/:root
+creates a bunch of custom variables that can be used later 
+
+Pseudo-classes
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+
+Using CSS custom properties (variables)
+https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+
+inherit
+https://developer.mozilla.org/en-US/docs/Web/CSS/inherit
+The inherit CSS keyword causes the element to take the computed value of the property from its parent element. 
+
+cursor
+https://developer.mozilla.org/en-US/docs/Web/CSS/cursor
+The cursor CSS property sets the mouse cursor, if any, to show when the mouse pointer is over an element.
+
+CSS Outline
+https://www.w3schools.com/css/css_outline.asp
+An outline is a line drawn outside the element's border.
+
+[align-items: center] sets the children elements in the vertical center
+[justify-content: center] sets the children elements in the horizontal center
+
+CSS word-wrap Property
+https://www.w3schools.com/cssref/css3_pr_word-wrap.php
+Allow long words to be able to break and wrap onto the next line
+
+word-break
+https://developer.mozilla.org/en-US/docs/Web/CSS/word-break
+The word-break CSS property sets whether line breaks appear wherever the text would otherwise overflow its content box.
+
+The word-break property in CSS is used to specify how a word should be broken or split when reaching the end of a line. The word-wrap property is used to split/break long words and wrap them into the next line.
+
+CSS Grid Layout Module
+https://www.w3schools.com/css/css_grid.asp
+
+grid-template-columns
+The grid-template-columns CSS property defines the line names and track sizing functions of the grid columns.
+
+grid-gap
+
+grid-column: span 2;
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column
